@@ -1,0 +1,32 @@
+install abp framework->dotnet tool install -g Volo.Abp.Cli
+create new project->abp new TodoApp(project name)
+adjust db connection in migrate and web
+run migrate
+domain:
+	create entity
+framework	
+	add entity as a dataset in  DbContext
+	map entity in onCreate
+	add foreign key relation
+domain:
+	add seed data for category table
+	add migration
+migrate
+	update db
+contract
+	create dto
+application
+	map dto and entity
+contract	
+	create interface
+application
+	create service
+	run swagger -> use admin as the username and 1q2w3E*
+shared
+	localization->remove unused files
+	adjust name inside     [LocalizationResourceName("JawdaProductCRUD")] as it will be used in js
+Web
+	localization-remove unused links->JawdaProductCRUDWebModule
+	create web pages index
+	add link in menu
+Make service name like interface name********************************

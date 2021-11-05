@@ -1,0 +1,44 @@
+{
+  "Culture": "en",
+  "Texts": {
+    "Menu:Home": "Home",
+    "Welcome": "Welcome",
+    "LongWelcomeMessage": "Welcome to Jawda .",
+    "Menu:ProductStore": "Product Store",
+    "Menu:Products": "Products",
+
+    "Actions": "Actions",
+    "Close": "Close",
+    "Delete": "Delete",
+    "Edit": "Edit",
+
+    "PublishDate": "Publish date",
+    "NewProduct": "New Product",
+    "Name": "Name",
+    "Type": "Type",
+    "Price": "Price",
+    "Category": "Category",
+    "CreationTime": "Creation time",
+
+    "AreYouSureToDelete": "Are you sure you want to delete this item?",
+    "ProductDeletionConfirmationMessage": "Are you sure to delete the Product '{0}'?",
+    "SuccessfullyDeleted": "Successfully deleted!",
+    "Permission:JawdaProduct": "JawdaProduct",
+
+    "Permission:Products": "Product",
+    "Permission:Products.Create": "Create",
+    "Permission:Products.Edit": "Edit",
+    "Permission:Products.Delete": "Delete",
+
+    "Permission:Categories": "Cat",
+    "Permission:Categories.Create": "Create,",
+    "Permission:Categories.Edit": "Edit",
+    "Permission:Categories.Delete": "Delete",
+
+    "Menu:Categories": "Categories",
+    "Categories": "Categories",
+    "CategoryDeletionConfirmationMessage": "Are you sure to delete the Category '{0}'?",
+    "BirthDate": "Birth date",
+    "NewCategory": "New Category"
+  }
+}

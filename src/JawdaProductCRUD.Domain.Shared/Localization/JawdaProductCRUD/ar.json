@@ -1,0 +1,32 @@
+﻿{
+  "Culture": "ar",
+  "Texts": {
+    "Menu:Home": "Home",
+    "Welcome": "Welcome",
+    "LongWelcomeMessage": "Welcome to Jawda .",
+    "Menu:ProductStore": "Product Store",
+    "Menu:Products": "Products",
+
+    "Actions": "إجراءات",
+    "Close": "غلق",
+    "Delete": "حذف",
+    "Edit": "تعديل",
+
+    "PublishDate": "Publish date",
+    "NewProduct": "  منتج جديد",
+    "Name": "أسم",
+    "Type": "نوع",
+    "Price": "سعر",
+    "Category": "تصنيف",
+    "CreationTime": "Creation time",
+
+    "AreYouSureToDelete": "Are you sure you want to delete this item?",
+    "ProductDeletionConfirmationMessage": "Are you sure to delete the Product '{0}'?",
+    "SuccessfullyDeleted": "Successfully deleted!",
+
+    "Permission:Edit": "Editing the Products",
+    "Permission:Delete": "Deleting the Products"
+
+
+  }
+}
