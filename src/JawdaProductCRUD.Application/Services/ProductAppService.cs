@@ -68,7 +68,8 @@ namespace JawdaProductCRUD.Services
             return ProductDto;
         }
 
-        public override async Task<PagedResultDto<ProductDto>> GetListAsync(PagedAndSortedResultRequestDto input)
+        public  async Task<PagedResultDto<ProductDto>> GetListByCategoryAsync
+            (PagedAndSortedResultRequestDto input,string categoryID)
         {
             //Get the IQueryable<Product> from the repository
             var queryable = await Repository.GetQueryableAsync();
@@ -76,6 +77,7 @@ namespace JawdaProductCRUD.Services
             //Prepare a query to join Products and categorys
             var query = from product in queryable
                         join category in _categoryRepository on product.CategoryID equals category.Id
+                        where(String.IsNullOrEmpty(categoryID) || (categoryID == "") || category.Id==new Guid( categoryID))
                         select new { product, category };
 
             //Paging
