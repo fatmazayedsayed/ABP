@@ -9,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Dynamic.Core;
+using System.Threading;
 using System.Threading.Tasks;
 using Volo.Abp.Application.Dtos;
 using Volo.Abp.Application.Services;
@@ -90,10 +91,12 @@ namespace JawdaProductCRUD.Services
             var queryResult = await AsyncExecuter.ToListAsync(query);
 
             //Convert the query result to a list of ProductDto objects
+            bool isAr = (Thread.CurrentThread.CurrentUICulture.Name=="ar"?true:false);
             var ProductDtos = queryResult.Select(x =>
             {
                 var ProductDto = ObjectMapper.Map<Product, ProductDto>(x.product);
                 ProductDto.CategoryTitle = x.category.title;
+                ProductDto.title_ar = (isAr ? x.product.title_ar : x.product.title_en);
                 return ProductDto;
             }).ToList();
 

@@ -22,7 +22,6 @@
                 //},
                 abp.libs.datatables.createAjax(jawdaProductCRUD.services.product.getListByCategory,
                     function () {
-                        debugger;
                         return {
                             categoryID:     categoryID
                         }
@@ -67,10 +66,7 @@
                         title: l('Name'),
                         data: "title_ar"
                     },
-                    {
-                        title: l('Name'),
-                        data: "title_en"
-                    },
+                    
                     {
                         title: l('Category'),
                         data: "categoryTitle"
