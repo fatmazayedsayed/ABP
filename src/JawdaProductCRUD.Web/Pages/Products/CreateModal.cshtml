@@ -12,11 +12,14 @@
     <abp-modal>
         <abp-modal-header title="@L["NewProduct"].Value"></abp-modal-header>
         <abp-modal-body>
-            <abp-input asp-for="Product.title" />
-            <abp-input asp-for="Product.description" />
+            <abp-input asp-for="Product.title_ar" />
+            <abp-input asp-for="Product.title_en" />
+            <abp-input asp-for="Product.description_ar" />
+            <abp-input asp-for="Product.description_en" />
+
             <abp-input asp-for="Product.picture" />
             <abp-input asp-for="Product.price" />
-            <abp-select  asp-for="Product.CategoryID" />
+            <abp-select asp-for="Product.CategoryID" />
         </abp-modal-body>
         <abp-modal-footer buttons="@(AbpModalButtons.Cancel|AbpModalButtons.Save)"></abp-modal-footer>
     </abp-modal>

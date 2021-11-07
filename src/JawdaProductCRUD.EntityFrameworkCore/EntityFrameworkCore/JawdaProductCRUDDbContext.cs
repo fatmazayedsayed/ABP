@@ -93,7 +93,7 @@ namespace JawdaProductCRUD.EntityFrameworkCore
                 b.ToTable(JawdaProductCRUDConsts.DbTablePrefix + "Product",
                     JawdaProductCRUDConsts.DbSchema);
                 b.ConfigureByConvention(); //auto configure for the base class props
-                b.Property(x => x.title).IsRequired().HasMaxLength(128);
+                b.Property(x => x.title_en).IsRequired().HasMaxLength(128);
                 //add foreign key relation 
                 b.HasOne<Category>().WithMany().HasForeignKey(x => x.CategoryID).IsRequired();
 

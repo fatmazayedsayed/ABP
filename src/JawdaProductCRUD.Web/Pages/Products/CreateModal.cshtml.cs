@@ -56,11 +56,22 @@ namespace JawdaProductCRUD.Web.Pages.Products
 
             [Required]
             [StringLength(128)]
-            public string title { get; set; }
+            public string title_ar { get; set; }
 
             [Required]
             [StringLength(128)]
-            public string description { get; set; }
+            public string description_ar { get; set; }
+
+
+            [Required]
+            [StringLength(128)]
+            public string title_en { get; set; }
+
+            [Required]
+            [StringLength(128)]
+            public string description_en{ get; set; }
+
+
             [Required]
             [StringLength(128)]
             public string picture { get; set; }

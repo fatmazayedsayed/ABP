@@ -65,7 +65,11 @@
                     },
                     {
                         title: l('Name'),
-                        data: "title"
+                        data: "title_ar"
+                    },
+                    {
+                        title: l('Name'),
+                        data: "title_en"
                     },
                     {
                         title: l('Category'),

@@ -9,11 +9,19 @@ namespace JawdaProductCRUD.DTO.Products
     {
         [Required]
         [StringLength(128)]
-        public string title { get; set; }
+        public string title_ar { get; set; }
 
-       // [Required]
+        // [Required]
         [StringLength(5000)]
-        public string description { get; set; }
+        public string description_ar { get; set; }
+
+        [Required]
+        [StringLength(128)]
+        public string title_en { get; set; }
+
+        // [Required]
+        [StringLength(5000)]
+        public string description_en { get; set; }
         [Required]
         public float price { get; set; }
         //[Required]

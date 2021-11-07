@@ -119,7 +119,7 @@ namespace JawdaProductCRUD.Services
         {
             if (sorting.IsNullOrEmpty())
             {
-                return $"product.{nameof(Product.title)}";
+                return $"product.{nameof(Product.title_en)}";
             }
 
             if (sorting.Contains("categoryTitle", StringComparison.OrdinalIgnoreCase))

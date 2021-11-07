@@ -7,8 +7,11 @@ namespace JawdaProductCRUD.DTO.Products
 {
     public class ProductDto : AuditedEntityDto<Guid>
     {
-        public string title { get; set; }
-        public string description { get; set; }
+        public string title_ar { get; set; }
+        public string description_ar { get; set; }
+
+        public string title_en { get; set; }
+        public string description_en { get; set; }
         public float price { get; set; }
         public Guid CategoryID { get; set; }
         public string picture { get; set; }
