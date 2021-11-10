@@ -64,7 +64,7 @@
                     },
                     {
                         title: l('Name'),
-                        data: "title_ar"
+                        data: "title"
                     },
                     
                     {
